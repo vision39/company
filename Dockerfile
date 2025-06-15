@@ -13,7 +13,7 @@ COPY . /var/www/html/
 RUN echo "root=dkrray772@gmail.com\n\
 mailhub=smtp.gmail.com:587\n\
 AuthUser=dkrray772@gmail.com\n\
-AuthPass=xazt gsmk hxwa trnb\n\
+AuthPass=xaztgsmkhxwatrnb\n\
 UseSTARTTLS=YES\n\
 FromLineOverride=YES" > /etc/ssmtp/ssmtp.conf
 
