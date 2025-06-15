@@ -1,11 +1,21 @@
-# Use the official PHP image with Apache
 FROM php:8.2-apache
 
-# Copy your PHP files into the container
-COPY . /var/www/html/
+# Install sendmail
+RUN apt-get update && apt-get install -y sendmail
 
-# Enable Apache rewrite module (if needed)
+# Enable rewrite module if needed
 RUN a2enmod rewrite
 
-# Set proper permissions (optional)
+# Copy app files
+COPY . /var/www/html/
+
+# Configure Gmail SMTP relay
+RUN echo "root=dkrray772@gmail.com\n\
+mailhub=smtp.gmail.com:587\n\
+AuthUser=dkrray772@gmail.com\n\
+AuthPass=xazt gsmk hxwa trnb\n\
+UseSTARTTLS=YES\n\
+FromLineOverride=YES" > /etc/ssmtp/ssmtp.conf
+
+# Set permissions (optional)
 RUN chown -R www-data:www-data /var/www/html
