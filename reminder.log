@@ -1,0 +1,24 @@
+TO: 22bcs11111@cuchd.in
+SUBJECT: Task Planner - Pending Tasks Reminder
+From: no-reply@example.com
+Content-type: text/html
+
+
+        <h2>Pending Tasks Reminder</h2>
+        <p>Here are the current pending tasks:</p>
+        <ul><li>eat</li><li>sleep</li></ul>
+        <p><a id="unsubscribe-link" href="http://localhost:3000/unsubscribe.php?email=MjJiY3MxMTExMUBjdWNoZC5pbg==">Unsubscribe from notifications</a></p>
+    
+------
+TO: dkrray772@gmail.com
+SUBJECT: Task Planner - Pending Tasks Reminder
+From: no-reply@example.com
+Content-type: text/html
+
+
+        <h2>Pending Tasks Reminder</h2>
+        <p>Here are the current pending tasks:</p>
+        <ul><li>eat</li><li>sleep</li></ul>
+        <p><a id="unsubscribe-link" href="http://localhost:3000/unsubscribe.php?email=ZGtycmF5NzcyQGdtYWlsLmNvbQ==">Unsubscribe from notifications</a></p>
+    
+------

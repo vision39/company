@@ -1,0 +1,10 @@
+TO: dkrray772@gmail.com
+SUBJECT: Verify subscription to Task Planner
+From: no-reply@example.com
+Content-type: text/html
+
+
+        <p>Click the link below to verify your subscription to Task Planner:</p>
+        <p><a id="verification-link" href="http://localhost:3000/verify.php?email=dkrray772%40gmail.com&code=169360">Verify Subscription</a></p>
+    
+------
