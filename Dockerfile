@@ -10,7 +10,7 @@ RUN a2enmod rewrite
 COPY . /var/www/html/
 
 # Configure Gmail SMTP relay
-RUN echo "root=dkrray772@gmail.com\n\
+RUN printf "root=dkrray772@gmail.com\n\
 mailhub=smtp.gmail.com:587\n\
 AuthUser=dkrray772@gmail.com\n\
 AuthPass=xaztgsmkhxwatrnb\n\
