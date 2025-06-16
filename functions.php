@@ -145,10 +145,7 @@ function subscribeEmail($email)
 	file_put_contents($pendingFile, json_encode($pending, JSON_PRETTY_PRINT));
 
 	// Send verification email
-	//$verificationLink = "http://localhost:3000/verify.php?email=" . urlencode($email) . "&code=$code";
-
-	$baseUrl = $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'];
-	$verificationLink = $baseUrl . "/verify.php?email=" . urlencode($email) . "&code=$code";
+	$verificationLink = "http://localhost:3000/verify.php?email=" . urlencode($email) . "&code=$code";
 
 
 
@@ -273,10 +270,7 @@ function sendTaskReminders()
 function sendTaskEmail($email, $pending_tasks) {
     $subject = "Task Planner - Pending Tasks Reminder";
 
-    //$unsubscribeLink = "http://localhost:3000/unsubscribe.php?email=" . base64_encode($email);
-
-	$baseUrl = $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'];
-	$unsubscribeLink = $baseUrl . "/unsubscribe.php?email=" . base64_encode($email);
+    $unsubscribeLink = "http://localhost:3000/unsubscribe.php?email=" . base64_encode($email);
 
 
     $taskList = '';
